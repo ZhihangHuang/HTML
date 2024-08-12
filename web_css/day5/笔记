@@ -1,0 +1,33 @@
+1.谁的范围广谁的优先级低
+盒子：
+    如果是png jpg的图点击设计
+    border 中   solid 实线
+                dashed 虚线
+                dotted 点线
+        border: 粗细 线条样式 颜色 //不分先后顺序
+        只有一边有线
+        border-方向 :粗细 线条样式 颜色
+    border会撑大盒子的尺寸
+    盒子尺寸 = width / height + 边框线
+    padding 也会把盒子撑大
+    padding 可以符合使用
+    padding可以单独表示某个方向的内边距
+    padding  top    right   bottom l    eft
+    padding  top     right/left      bottom
+    padding  top/bottom   right/left
+    padding  top/bottom/right/left
+    遇到没有看对面
+
+    box-sizing : border - box;
+
+    margin 和 padding 取值一样
+    版心指的是网页的有效内容
+        版心一般都是居中
+        谁要居中就把谁加一个margin: 0 auto;
+
+去掉list前面的符号：
+ul {
+    list-style: none;
+}
+如果想要通过margin 和 padding 改变行内标签的位置无法生效（上下margin和padding 无法生效）
+通过line-height来改变span水平位置
