@@ -81,7 +81,7 @@ h1{
     float: left;
     width: 50px;
     height: 40px;
-    background-image: url(../images/banner2.png);
+    background-image: url(../images/btn.png);
     border: 0;
     margin-left: 1px;
 }
@@ -89,7 +89,6 @@ h1{
     float: left;
     margin: 4px 0 3px 30px;
     
-    width: px;
     height: 33px;
     /* background-color: green; */
 }
@@ -99,6 +98,7 @@ h1{
     width: 30px;
     height: 30px;
     border: 0;
+    
 }
 .account div{
     display: inline-block;
@@ -109,6 +109,7 @@ h1{
     height: 14px;
     font-size: 14px;
     color: #666666;
+    vertical-align: middle;
 }
 .banner{
     height: 420px; ;

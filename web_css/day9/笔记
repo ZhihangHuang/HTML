@@ -1,0 +1,46 @@
+1.精灵图
+    将项目中的小图片合成一张大图片，这个大图叫精灵图
+    创建一个盒子，设置盒子的尺寸和小图尺寸
+    将精灵图设置为盒子的背景图 background-image
+    位置： 通过测量小图片左上角坐标分别取负值给盒子的background-position： x y
+    精灵图的标签一般都用行内标签 比如 span， b，i
+2.背景图片大小
+    background-size:宽度 高度
+    取值                  场景
+    数字+px               简单方便常用
+    百分比                相对于当前盒子自身的宽高百分比
+    contain               包含，将背景图片等比例缩放，直到不会超出盒子的最大（可能留白）
+    cover                 覆盖，将背景图片等比例缩放直到刚好填满整个盒子的空白（可能图片有的地方显示不出来）
+
+    background-repeat : no-repeats 的意思是图片不repeat
+3.盒子阴影：
+    属性名 box-shadow （用空格 隔开）
+    取值                作用
+    h-shadow            必须水平偏移量允许负值
+    v-shadow            必须垂直偏移量允许负值
+    blur                可选 模糊度
+    spread              可选 阴影扩大
+    color               可选 阴影颜色
+    inset               可选 将阴阳改为内部阴影
+4.过度：
+通常和hover 一起使用增强用户体验 谁变化睡加过渡属性
+属性名 transition
+常见取值
+参数                取值
+过渡的属性          all: 所有能过度的属性都过度， 具体属性名如：width: 只有width过度
+过度时常            数字+s(秒)
+eg: xxx {
+    transition: width 1s, background-color 2s
+    宽度1s 变完 颜色2s变完
+    或者用
+    transition: all 1s; 变化的属性比较多
+}
+ xxx:hover{
+    width: 变化之后的值；
+    background-color： 变化之后的颜色；
+ }
+5. .ico的图标
+
+常见代码：
+    <link rel = "shortcut icon" herf="ico图标路径" type="image/x-icon">
+    一般都放在根目录

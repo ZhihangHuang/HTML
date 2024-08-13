@@ -9,3 +9,49 @@ poisition: relative
 poisition relative
 以有定位的父级移动 不论是relative 还是absolute
 父类没有移动的话就
+absolute 的盒子具有行内块的特点 加宽度高度生效，没有宽度内容，盒子的尺寸就是0
+如果子级和父级的宽度一样就写width: 100%；
+
+
+poisition : fixed;
+1.脱标不占位置
+2.改变位置参考浏览器
+3具备行黑块的特点
+
+
+默认情况下，定位盒子后来居上（z-index: 整数（取值越大显示顺序约靠上，默认值是0）
+z-index 必须配合定位才能生效
+
+
+无论是行内块 文字对齐 还是行内块和行内块对齐都是 vertical-align： middle；
+也可以display : block;
+
+要求图在垂直方向居中,給父级加一个行高，然后把图加一个vertical-align：middle;
+
+浏览器解析行内，行内块全当文字处理 所以 text-align： center；就是水平居中
+
+鼠标(光标类型)：
+属性名: cursor
+属性值                      效果
+defalut                     默认值通常是箭头
+pointer                     小手效果提示用户可以点击
+text                        工字形，提醒用户可以点击文字
+move                        十字光标，提示用户可以移动
+
+border-radius: 左上 右上 右下 左下（没有数看对角）
+圆形 border-radius: 50%; (50%取盒子尺寸的一半)
+胶囊按钮需要盒子是长方形： border- radius: 盒子高度的一半；
+ overflow:
+    属性名: overflow   
+    属性值：                效果
+    visible                 默认值，溢出效果可见
+    hidden                  溢出部分隐藏
+    scroll                  无论是否溢出，都显示滚动条
+    auto                    根据是否溢出，自动显示或隐藏滚动条
+
+隐藏元素
+   display：none；（不占位的隐藏）；（显示 display: bolck/inline-block）
+   visibility ：none ;(占位)
+元素透明度：
+属性名： opacity
+属性值： 0-1之间 1完全不透明 0完全透明
