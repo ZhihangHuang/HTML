@@ -1,0 +1,260 @@
+/* 放index页面的样式表 */
+.header .bag .two{
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    width: 20px;
+	height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 15px;
+    text-align: center;
+}
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .bgi{
+    position: relative;
+}
+.banner .bgi .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 251px;
+	height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .bgi .left li{
+    width: 251px;
+	height: 50px; 
+}
+.banner .bgi .left a{
+    position: relative;
+    height: 50px; 
+    display: block;
+    color: #ffffff;
+    line-height: 50px;
+
+}
+.banner .bgi .left h3{
+    float: left;
+    display: block;
+    padding-left:36px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.banner .bgi .left span{
+    float: left;
+    display: block;
+    margin-left: 15px;
+    font-size: 14px;
+}
+.banner .bgi .left a::after{
+    content: ' ';
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    width: 6px;
+    height: 11px;
+    /* background-color: green; */
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+
+}
+.banner .bgi .left a:hover{
+    background-color: #27ba9b;
+}
+.prv, 
+.next {
+    position: absolute;
+    top:228px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url(../images/sprites.png);
+}  
+.prv {
+    left: 260px;
+    background-position: 13px -61px;
+}
+.next{
+    right: 10px;
+    background-position: -22px -61px;
+}
+.banner .bgi ol{
+    position: absolute;
+    left: 680px;
+    top: 459px;
+    width: 200px;
+    height: 10px;
+    /* background-color: #27ba9b; */
+}
+.banner .bgi ol li{
+    float: left;
+    margin-right: 24px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(250, 250, 250, 0.43);
+    cursor: pointer;
+}
+.banner .bgi .active{
+    background-color: #ffffff;
+}
+
+.goods .he{
+    height: 114;
+    line-height: 114px;
+    /* background-color: #e26237; */
+}
+.goods .he h3{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;   
+}
+.goods .he h3 span{
+    font-size: 16px;
+    color: #999999;
+    margin-left: 34px;
+}
+.goods .he a,
+.fresh .hd .more
+{
+    float: right;
+    color: #999999;
+    font-size: 16px;
+}
+
+.goods .he a::after,
+.fresh .hd .more::after
+{
+    content: ' ';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    /* background-color: #e26237; */
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+    margin-left: 13px;
+}
+
+/* 产品 */
+.goods .hd li{
+    position: relative;
+    float: left;
+    height: 405px;
+    width: 304px;
+    /* background-color: palegoldenrod; */
+    margin-right: 8px;
+    text-align: center;
+}
+.goods .hd li:last-child{
+    margin-right: 0%;
+}
+.goods .hd li img{
+    height: 305px;
+}
+.goods .hd li h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+.goods .hd li span,
+.fresh .bd .right li .text1 div
+{
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.goods .hd li span em,
+.fresh .bd .right li .text1 span{
+    font-size: 23px;
+}
+.goods .hd li b{
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #27ba9b;
+    border: 1px solid #27ba9b;
+    line-height: 24px;
+}
+/* 生鲜 head*/
+.fresh .hd {
+    height: 96px;
+    line-height: 96px;
+}
+.fresh .hd h3{
+    float: left;
+    font-size: 29px;
+    font-weight: 400; 
+}
+.fresh .hd .more{
+    float: right;
+    margin-left: 89px;
+}
+.fresh .hd ul{
+    float: right;
+}
+.fresh .hd ul a{
+    font-size: 16px;
+}
+.fresh .hd ul li{
+    float: left;
+}
+.fresh .hd ul li a{
+    padding: 2px  7px;
+    margin: 0 6px;  
+}
+.fresh .hd ul li a:hover{
+    background-color: #27ba9b;
+    color: #fefbfc;
+}
+/* 生鲜body */
+.fresh .bd .left{  
+    float: left; 
+    width: 240px;
+}
+.fresh .bd .left img{
+    width: 240px;
+}
+.fresh .bd .right{
+    float: left;
+    width: 1000px;
+}
+.fresh .bd .right li{
+
+    float: left;
+    width: 242px;
+	height: 304px;
+    /* background-color: #9a2e1f; */
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+.fresh .bd .right li:nth-child(4n){
+    margin-right: 0;
+}
+.fresh .bd .right li img{
+    margin:8px 29px;
+    right: 29px;
+    top: 8px;
+    width: 184px;
+}
+.fresh .bd .right li .text1{
+    display: block;
+    margin: 4px 47px 18px;
+}
+.fresh .bd .right li:hover{
+    border: 2px solid #27ba9b;
+
+}
+
